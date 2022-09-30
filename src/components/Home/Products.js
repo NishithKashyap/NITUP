@@ -9,7 +9,7 @@ const CardStyle = {
 }
 
 const ColStyle = {
-    padding: '30px'
+    padding: '10px'
 }
 
 const ImgStyle = {
@@ -23,7 +23,8 @@ const HeadingStyle = {
 }
 
 const ContainerStyle = {
-    marginBottom: '3em',
+    maxWidth: '85%',
+    paddingBottom: '6em',
     alignItems: 'center',
     justifyContent: 'center'
 }
@@ -31,14 +32,14 @@ const ContainerStyle = {
 export default function Products() {
   return (
     <div>
-        <a style={HeadingStyle}>
+        <h1 style={HeadingStyle}>
             <p>Products</p>
-        </a>
-        <Container style={ContainerStyle}>
+        </h1>
+        <Container fluid style={ContainerStyle}>
             <Row xs={1} md={3} >
                 <Col style={ColStyle}>
                     <Card style={CardStyle}>
-                        <Card.Img src={require('../images/shirt.webp')} style={ImgStyle}></Card.Img>
+                        <Card.Img src={require('../../images/shirt.webp')} style={ImgStyle}></Card.Img>
                         <Card.Body>
                             <Card.Title>Shirts</Card.Title>
                             <Card.Text>All authentic 100% cotton shirts</Card.Text>
@@ -49,7 +50,7 @@ export default function Products() {
 
                 <Col style={ColStyle}>
                     <Card style={CardStyle}>
-                        <Card.Img src={require('../images/Tshirt.jpg')} style={ImgStyle}></Card.Img>
+                        <Card.Img src={require('../../images/Tshirt.jpg')} style={ImgStyle}></Card.Img>
                         <Card.Body>
                             <Card.Title>T Shirts</Card.Title>
                             <Card.Text>All authentic 100% cotton shirts</Card.Text>
@@ -60,7 +61,7 @@ export default function Products() {
 
                 <Col style={ColStyle}>
                     <Card style={CardStyle}>
-                        <Card.Img src={require('../images/oversizedT.webp')} style={ImgStyle}></Card.Img>
+                        <Card.Img src={require('../../images/oversizedT.webp')} style={ImgStyle}></Card.Img>
                         <Card.Body>
                             <Card.Title>Oversized T-Shirts</Card.Title>
                             <Card.Text>All authentic 100% cotton shirts</Card.Text>
@@ -71,7 +72,7 @@ export default function Products() {
 
                 <Col style={ColStyle}>
                     <Card style={CardStyle}>
-                        <Card.Img src={require('../images/posters.jpg')} style={ImgStyle}></Card.Img>
+                        <Card.Img src={require('../../images/posters.jpg')} style={ImgStyle}></Card.Img>
                         <Card.Body>
                             <Card.Title>Posters</Card.Title>
                             <Card.Text>All authentic 100% cotton shirts</Card.Text>
@@ -82,7 +83,7 @@ export default function Products() {
 
                 <Col style={ColStyle}>
                     <Card style={CardStyle}>
-                        <Card.Img src={require('../images/posters.jpg')} style={ImgStyle}></Card.Img>
+                        <Card.Img src={require('../../images/posters.jpg')} style={ImgStyle}></Card.Img>
                         <Card.Body>
                             <Card.Title>Posters</Card.Title>
                             <Card.Text>All authentic 100% cotton shirts</Card.Text>

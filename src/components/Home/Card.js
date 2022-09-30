@@ -1,13 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';  
 import {Container ,Card, Col, Button} from 'react-bootstrap';  
-import img1 from './img1.jpg';  
 function App() {  
   return (  
     <div className="App">  
         <Container className='p-4'>  
         <Col md="4">  
-            <Card>  
-                <Card.Img variant="top" src={img1} />  
+            <Card>
                 <Card.Body>  
                     <Card.Title>Card Title</Card.Title>  
                     <Card.Text>  

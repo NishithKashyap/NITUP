@@ -1,1 +1,1 @@
-export default navBarHeight = '2vh'
+export const navBarHeight = '2vh'
