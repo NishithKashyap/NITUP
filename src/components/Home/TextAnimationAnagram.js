@@ -1,7 +1,7 @@
 import { MovingComponent } from 'react-moving-text';
 
 const exampleStyle = {
-    display: 'inline-block',
+    display: 'flex',
     backgroundColor: 'black',
     color: 'white',
     border: '1px #ccc',
@@ -10,8 +10,7 @@ const exampleStyle = {
     padding: '2em 1em 1em 1em',
     width: '100%',
     fontSize: '4vh',
-    fontFamily: 'Combo', 
-    display: 'flex',
+    fontFamily: 'Combo',
     alignItems: 'centre',
     justifyContent: 'center'
   }

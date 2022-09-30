@@ -1,6 +1,4 @@
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -48,7 +46,7 @@ function Header() {
 
 export default Header;
 
-{/* <Navbar className="color-nav" collapseOnSelect expand="lg" bg="dark" variant="dark" fixed='top'>
+/* <Navbar className="color-nav" collapseOnSelect expand="lg" bg="dark" variant="dark" fixed='top'>
         <Container> 
             <Navbar.Brand href="#home">
                 KNITUP
@@ -75,4 +73,4 @@ export default Header;
 
             </Navbar.Collapse>
         </Container>
-        </Navbar> */}
+        </Navbar> */
