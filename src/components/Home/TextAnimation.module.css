@@ -1,0 +1,14 @@
+.animatedText {
+    display: flex;
+    background-color: black;
+    color: white;
+    border: 1px #ccc;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 2em 1em 1em 1em;
+    width: 100%;
+    font-size: 4vh;
+    font-family: Combo;
+    align-items: centre;
+    justify-content: center;
+}
