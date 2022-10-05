@@ -1,62 +1,27 @@
-import { CCard, CCardTitle, CCardText, CButton, CCardBody, CCardImage, CCardImageOverlay } from '@coreui/react'
-import { Container, Row } from 'react-bootstrap'
-
-const centered = {
-    position: 'absolute', 
-    top: '80%',
-    left: '30%'
-}
+import { Container, Row, Col, Button, Card } from 'react-bootstrap'
+import styles from './Banner.module.css'
 
 export default function Banner(){
     return (
-        
-        <div className='row' style={{marginBottom:'2em'}}>
-            <div className='col-lg-5 col-md-5 col-sm-12 offset-lg-1 px-0'>
-                <div className="card bg-dark text-white" style={{height:'initial', width:'100%', margin:'0px'}}>
-                    <img className="card-img" src={require('../../images/oversizedT.webp')} alt="Card image" />
-                        <div className="card-img-overlay" style={centered}>
-                            <CButton shape='rounded-pill' color='white' href="#!">Shop Now</CButton>
-                        </div>
-                </div>
-            </div>
-            <div className='col-lg-5 col-md-5 col-sm-12 px-0'>
-                <div className="card bg-dark text-white" style={{height:'auto', width:'100%', margin:'0px'}}>
-                    <img className="card-img" src={require('../../images/oversizedT.webp')} alt="Card image" />
-                        <div className="card-img-overlay" style={centered}>
-                            <CButton shape='rounded-pill' color='white' href="#!">Shop Now</CButton>
-                        </div>
-                </div>
-            </div>
-            
-        </div>
-        
-        /*<Container>
-            <Row>
-                <CCard classNameName='col-sm' style={{height:'auto'}}>
-                    <CCardImage src= {require('../images/shirt.webp')} />
-                    <CCardImageOverlay>
-                        <CCardBody style={centered}>
-                            <CButton shape='rounded-pill' color='white' href="#">Shop Now</CButton>
-                        </CCardBody>
-                    </CCardImageOverlay>
-                </CCard>
-                <CCard classNameName='col-sm' style={{height:'auto'}}>
-                    <CCardImage src= {require('../images/shirt.webp')} />
-                    <CCardImageOverlay>
-                        <CCardBody style={centered}>
-                            <CButton shape='rounded-pill' color='white' href="#">Shop Now</CButton>
-                        </CCardBody>
-                    </CCardImageOverlay>
-                </CCard>
-                <CCard classNameName='col-sm' style={{height:'auto'}}>
-                    <CCardImage src= {require('../images/shirt.webp')} />
-                    <CCardImageOverlay>
-                        <CCardBody style={centered}>
-                            <CButton shape='rounded-pill' color='white' href="#">Shop Now</CButton>
-                        </CCardBody>
-                    </CCardImageOverlay>
-                </CCard>
-            </Row> 
-        </Container>*/
+        <Container fluid>
+            <Row className={styles.rowBanner}>
+                <Col lg={6} md={6} sm={12} className="px-0 w-50">
+                    <Card className={`${styles.cardBanner} bg-dark text-white`}>
+                        <Card.Img className={styles.imageCardBanner} src={require('../../images/2.jpg')} alt="Card image" />
+                        <Card.ImgOverlay className="d-flex justify-content-center">
+                            <Button className="mt-auto rounded-pill btn-light" color='white' href="#!">Shop Now</Button>
+                        </Card.ImgOverlay>
+                    </Card>
+                </Col>
+                <Col lg={6} md={6} sm={12} className="px-0 w-50">
+                    <Card className={`${styles.cardBanner} bg-dark text-white`}>
+                        <Card.Img className={styles.imageCardBanner} src={require('../../images/3.jpg')} alt="Card image" />
+                        <Card.ImgOverlay className="d-flex justify-content-center">
+                            <Button className="mt-auto rounded-pill btn-light" color='white' href="#!">Shop Now</Button>
+                        </Card.ImgOverlay>
+                    </Card>
+                </Col>
+            </Row>
+        </Container>  
     )
 }
