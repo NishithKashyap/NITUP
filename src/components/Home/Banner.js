@@ -4,8 +4,8 @@ import styles from './Banner.module.css'
 export default function Banner(){
     return (
         <Container fluid>
-            <Row className={styles.rowBanner}>
-                <Col lg={6} md={6} sm={12} className="px-0 w-50">
+            <Row sm={1} md={2} className={styles.rowBanner}>
+                <Col className="px-0">
                     <Card className={`${styles.cardBanner} bg-dark text-white`}>
                         <Card.Img className={styles.imageCardBanner} src={require('../../images/2.jpg')} alt="Card image" />
                         <Card.ImgOverlay className="d-flex justify-content-center">
@@ -13,7 +13,7 @@ export default function Banner(){
                         </Card.ImgOverlay>
                     </Card>
                 </Col>
-                <Col lg={6} md={6} sm={12} className="px-0 w-50">
+                <Col className="px-0">
                     <Card className={`${styles.cardBanner} bg-dark text-white`}>
                         <Card.Img className={styles.imageCardBanner} src={require('../../images/3.jpg')} alt="Card image" />
                         <Card.ImgOverlay className="d-flex justify-content-center">
