@@ -1,0 +1,32 @@
+.headingProducts {
+    color: white;
+    font-family: Combo;
+}
+
+.containerProducts {
+    padding: 1em;
+    margin-bottom: 3em;
+}
+
+.cardProducts {
+    height: auto;
+    width: 100%;
+    margin: 0px;
+}
+
+.imageProducts {
+    object-fit: contain;
+    max-width:100%;
+    max-height:100%;
+}
+
+.rowProducts {
+    padding: 0px;
+}
+
+.colProducts {
+    padding: 1em;
+}
+
+.cardButtonProducts {
+}
