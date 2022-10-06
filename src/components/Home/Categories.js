@@ -8,7 +8,7 @@ export default function Categories(){
             <Row sm={1} md={3} className={`${styles.rowProducts} px-0`}>
                 <Col className={styles.colProducts}>
                     <Card className={styles.cardProducts}> 
-                        <Card.Img className={styles.imageProducts} src={require('../../images/1.jpg')}/>
+                        <Card.Img className={styles.imageProducts} src={require('../../images/Categories/accessories.jpeg')}/>
                         <Card.ImgOverlay className="d-flex justify-content-center">
                             <Button className={`${styles.cardButtonProducts} mt-auto rounded-pill btn-light`} href='#!'>Oversized Tshirts</Button>
                         </Card.ImgOverlay>
@@ -16,7 +16,7 @@ export default function Categories(){
                 </Col>
                 <Col className={styles.colProducts}>
                     <Card className={styles.cardProducts}>
-                        <Card.Img className={styles.imageProducts} src={require('../../images/1.jpg')} />
+                        <Card.Img className={styles.imageProducts} src={require('../../images/Categories/cargoPants.webp')} />
                         <Card.ImgOverlay className="d-flex justify-content-center">
                             <Button className={`${styles.cardButtonProducts} mt-auto rounded-pill btn-light`} href='#!'>Graphic Tshirts</Button>
                         </Card.ImgOverlay>
@@ -24,7 +24,7 @@ export default function Categories(){
                 </Col>
                 <Col className={styles.colProducts}>
                     <Card className={styles.cardProducts}>
-                        <Card.Img className={styles.imageProducts} src={require('../../images/1.jpg')} />
+                        <Card.Img className={styles.imageProducts} src={require('../../images/Categories/graphicTShirt.jpeg')} />
                         <Card.ImgOverlay className="d-flex justify-content-center">
                             <Button className={`${styles.cardButtonProducts} mt-auto rounded-pill btn-light`} href='#!'>Polo Tshirts</Button>
                         </Card.ImgOverlay>
@@ -34,7 +34,7 @@ export default function Categories(){
             <Row sm={1} md={3} className={`${styles.rowProducts} px-0`}>
                 <Col className={styles.colProducts}>
                     <Card className={styles.cardProducts}>
-                        <Card.Img className={styles.imageProducts} src={require('../../images/1.jpg')} />
+                        <Card.Img className={styles.imageProducts} src={require('../../images/Categories/hoodies.jpeg')} />
                         <Card.ImgOverlay className="d-flex justify-content-center">
                             <Button className={`${styles.cardButtonProducts} mt-auto rounded-pill btn-light`} href='#!'>Hoodies</Button>
                         </Card.ImgOverlay>
@@ -42,7 +42,7 @@ export default function Categories(){
                 </Col>
                 <Col className={styles.colProducts}>
                     <Card className={styles.cardProducts}>
-                        <Card.Img className={styles.imageProducts} src={require('../../images/1.jpg')} />
+                        <Card.Img className={styles.imageProducts} src={require('../../images/Categories/oversizedT.jpeg')} />
                         <Card.ImgOverlay className="d-flex justify-content-center">
                             <Button className={`${styles.cardButtonProducts} mt-auto rounded-pill btn-light`} href='#!'>Cargo pants</Button>
                         </Card.ImgOverlay>
@@ -50,7 +50,7 @@ export default function Categories(){
                 </Col>
                 <Col className={styles.colProducts}>
                     <Card className={styles.cardProducts}>
-                        <Card.Img className={styles.imageProducts} src={require('../../images/1.jpg')} />
+                        <Card.Img className={styles.imageProducts} src={require('../../images/Categories/poloT.jpg')} />
                         <Card.ImgOverlay className="d-flex justify-content-center">
                             <Button className={`${styles.cardButtonProducts} mt-auto rounded-pill btn-light`} href='#!'>Accessories</Button>
                         </Card.ImgOverlay>

@@ -7,7 +7,7 @@ export default function Banner(){
             <Row sm={1} md={2} className={styles.rowBanner}>
                 <Col className="px-0">
                     <Card className={`${styles.cardBanner} bg-dark text-white`}>
-                        <Card.Img className={styles.imageCardBanner} src={require('../../images/2.jpg')} alt="Card image" />
+                        <Card.Img className={styles.imageCardBanner} src={require('../../images/bannerMen.jpg')} alt="Card image" />
                         <Card.ImgOverlay className="d-flex justify-content-center">
                             <Button className="mt-auto rounded-pill btn-light" color='white' href="#!">Shop Now</Button>
                         </Card.ImgOverlay>
@@ -15,7 +15,7 @@ export default function Banner(){
                 </Col>
                 <Col className="px-0">
                     <Card className={`${styles.cardBanner} bg-dark text-white`}>
-                        <Card.Img className={styles.imageCardBanner} src={require('../../images/3.jpg')} alt="Card image" />
+                        <Card.Img className={styles.imageCardBanner} src={require('../../images/bannerMen.jpg')} alt="Card image" />
                         <Card.ImgOverlay className="d-flex justify-content-center">
                             <Button className="mt-auto rounded-pill btn-light" color='white' href="#!">Shop Now</Button>
                         </Card.ImgOverlay>
