@@ -26,7 +26,7 @@
     "react-scroll-motion": "^0.3.0",
     "react-spring": "^9.5.2",
     "styled-components": "^5.3.5",
-    "swiper": "^8.3.2",
+    "swiper": "^8.4.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
