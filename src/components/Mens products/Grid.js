@@ -1,32 +1,33 @@
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import { Swiper, SwiperSlide } from 'swiper/react'; 
 import styles from '../Home/Categories.module.css'
 
-export default function Categories(){
+export default function Grid(){
     return(
         <Container fluid className={`${styles.containerProducts} bg-dark text-center`}>
-            <h1 className={styles.headingProducts}>CATEGORIES</h1>
+            <h1 className={styles.headingProducts}>WHERE TO?</h1>
             <Row sm={1} md={3} className={`${styles.rowProducts} px-0`}>
                 <Col className={styles.colProducts}>
                     <Card className={styles.cardProducts}> 
-                        <Card.Img className={styles.imageProducts} src={require('../../images/Categories/accessories.jpeg')}/>
+                        <Card.Img className={styles.imageProducts} src={require('../../images/MensProducts/fitness.webp')}/>
                         <Card.ImgOverlay className="d-flex justify-content-center">
-                            <Button className={`${styles.cardButtonProducts} mt-auto rounded-pill btn-light`} href='#!'>Oversized Tshirts</Button>
+                            <Button className={`${styles.cardButtonProducts} mt-auto rounded-pill btn-light`} href='#!'>Fitness</Button>
                         </Card.ImgOverlay>
                     </Card>
                 </Col>
                 <Col className={styles.colProducts}>
                     <Card className={styles.cardProducts}>
-                        <Card.Img className={styles.imageProducts} src={require('../../images/Categories/cargoPants.webp')} />
+                        <Card.Img className={styles.imageProducts} src={require('../../images/MensProducts/college.jpg')} />
                         <Card.ImgOverlay className="d-flex justify-content-center">
-                            <Button className={`${styles.cardButtonProducts} mt-auto rounded-pill btn-light`} href='#!'>Graphic Tshirts</Button>
+                            <Button className={`${styles.cardButtonProducts} mt-auto rounded-pill btn-light`} href='#!'>College</Button>
                         </Card.ImgOverlay>
                     </Card>
                 </Col>
                 <Col className={styles.colProducts}>
                     <Card className={styles.cardProducts}>
-                        <Card.Img className={styles.imageProducts} src={require('../../images/Categories/graphicTShirt.jpeg')} />
+                        <Card.Img className={styles.imageProducts} src={require('../../images/MensProducts/WFH.jpg')} />
                         <Card.ImgOverlay className="d-flex justify-content-center">
-                            <Button className={`${styles.cardButtonProducts} mt-auto rounded-pill btn-light`} href='#!'>Polo Tshirts</Button>
+                            <Button className={`${styles.cardButtonProducts} mt-auto rounded-pill btn-light`} href='#!'>Work from Home</Button>
                         </Card.ImgOverlay>
                     </Card>
                 </Col>
@@ -34,25 +35,25 @@ export default function Categories(){
             <Row sm={1} md={3} className={`${styles.rowProducts} px-0`}>
                 <Col className={styles.colProducts}>
                     <Card className={styles.cardProducts}>
-                        <Card.Img className={styles.imageProducts} src={require('../../images/Categories/hoodies.jpeg')} />
+                        <Card.Img className={styles.imageProducts} src={require('../../images/MensProducts/hangouts.jpg')} />
                         <Card.ImgOverlay className="d-flex justify-content-center">
-                            <Button className={`${styles.cardButtonProducts} mt-auto rounded-pill btn-light`} href='#!'>Hoodies</Button>
+                            <Button className={`${styles.cardButtonProducts} mt-auto rounded-pill btn-light`} href='#!'>Hangouts</Button>
                         </Card.ImgOverlay>
                     </Card>
                 </Col>
                 <Col className={styles.colProducts}>
                     <Card className={styles.cardProducts}>
-                        <Card.Img className={styles.imageProducts} src={require('../../images/Categories/oversizedT.jpeg')} />
+                        <Card.Img className={styles.imageProducts} src={require('../../images/MensProducts/travelling.webp')} />
                         <Card.ImgOverlay className="d-flex justify-content-center">
-                            <Button className={`${styles.cardButtonProducts} mt-auto rounded-pill btn-light`} href='#!'>Cargo pants</Button>
+                            <Button className={`${styles.cardButtonProducts} mt-auto rounded-pill btn-light`} href='#!'>Travel</Button>
                         </Card.ImgOverlay>
                     </Card>
                 </Col>
                 <Col className={styles.colProducts}>
                     <Card className={styles.cardProducts}>
-                        <Card.Img className={styles.imageProducts} src={require('../../images/Categories/poloT.jpg')} />
+                        <Card.Img className={styles.imageProducts} src={require('../../images/MensProducts/icons.jpg')} />
                         <Card.ImgOverlay className="d-flex justify-content-center">
-                            <Button className={`${styles.cardButtonProducts} mt-auto rounded-pill btn-light`} href='#!'>Accessories</Button>
+                            <Button className={`${styles.cardButtonProducts} mt-auto rounded-pill btn-light`} href='#!'>Icons</Button>
                         </Card.ImgOverlay>
                     </Card>
                 </Col>
