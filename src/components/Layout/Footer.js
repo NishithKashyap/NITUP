@@ -1,47 +1,58 @@
-import React from 'react';
+import React from "react";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import styles from "./Footer.module.css";
 import {
-  MDBFooter,
-  MDBContainer,
-  MDBIcon,
-  MDBBtn
-} from 'mdb-react-ui-kit';
+	FACEBOOK_URL,
+	TWITTER_URL,
+	INSTAGRAM_URL,
+	LINKEDIN_URL,
+	GMAIL_MAILTO
+} from "../../Constants";
 
 function Footer() {
-  return (
-    <MDBFooter className='bg-dark text-center text-white'>
-      <MDBContainer className='p-4  pb-0'  style={{alignItems: 'center', justifyContent: 'center', width: '100%'}}>
-        <section className='mb-4'>
-          <MDBBtn tag='a' noRipple color='none' className='m-1' href='https://www.facebook.com/Nitup_official-104907148919179/' style={{ color: '#3b5998' }}>
-            <MDBIcon fab icon='facebook-f' size='lg' />
-          </MDBBtn>
-
-          <MDBBtn tag='a' noRipple color='none' className='m-1' style={{ color: '#55acee' }}>
-            <MDBIcon fab icon='twitter' size='lg' />
-          </MDBBtn>
-
-          <MDBBtn tag='a' noRipple color='none' className='m-1' style={{ color: '#dd4b39' }}>
-            <MDBIcon fab icon='google' size='lg' />
-          </MDBBtn>
-
-          <MDBBtn tag='a' noRipple color='none' className='m-1' href='https://instagram.com/nitup_official?igshid=YmMyMTA2M2Y=' style={{ color: '#ac2bac' }}>
-            <MDBIcon fab icon='instagram' size='lg' />
-          </MDBBtn>
-
-          <MDBBtn tag='a' noRipple color='none' className='m-1' href='https://www.linkedin.com/company/nitup-official/' style={{ color: '#0082ca' }}>
-            <MDBIcon fab icon='linkedin-in' size='lg' />
-          </MDBBtn>
-        </section>
-      </MDBContainer>
-
-      <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-        © 2022 Copyright:
-        <a className='text-white' href='https://mdbootstrap.com/'>
-          KNITUP.com
-        </a>
-        {/* Copyright &copy; knitup */}
-      </div>
-    </MDBFooter>
-  )
+	return (
+		<Container fluid className='bg-dark text-center text-white w-100'>
+			<Row className='p-2'>
+				<Col>
+					<Button variant='link' href={FACEBOOK_URL}>
+						<i
+							className={`${styles.facebook} fab fa-facebook-f`}
+						></i>
+					</Button>
+					<Button variant='link' href={TWITTER_URL}>
+						<i className={`${styles.twitter} fab fa-twitter`}></i>
+					</Button>
+					<Button variant='link' href={GMAIL_MAILTO}>
+						<i
+							className={`${styles.gmail} fa-sharp fa-solid fa-envelope`}
+						></i>
+					</Button>
+					<Button variant='link' href={INSTAGRAM_URL}>
+						<i
+							className={`${styles.instagram} fab fa-instagram`}
+						></i>
+					</Button>
+					<Button variant='link' href={LINKEDIN_URL}>
+						<i
+							className={`${styles.linkedin} fab fa-linkedin-in`}
+						></i>
+					</Button>
+				</Col>
+			</Row>
+			<Row
+				className='text-center p-3'
+				style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
+			>
+				<Col>
+					© 2022 Copyright:
+					<a className='text-white' href='#!'>
+						KNITUP.com
+					</a>
+					{/* Copyright &copy; knitup */}
+				</Col>
+			</Row>
+		</Container>
+	);
 }
 
-export default Footer
+export default Footer;
